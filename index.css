@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: #e0e7ee;
+}
+
+header{
+    position: absolute;
+}
+
+#caravana{
+    width: 100dvw;
+    height: fit-content;
+    background-image: url(./assets/caravana.jpg);
+    background-size: cover;
+    background-position-x: 30%;
+    position: relative;
+    z-index: -2;
+}
+
+#caravanaBg{
+    height: 100%;
+    width: 100dvw;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: -1;
+}
+
+#caravanaInfo{
+    width: 90dvw;;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6dvw;
+    align-items: center;
+    padding: 10dvw 0;
+}
+
+#caravanaInfo img{
+    width: 70dvw;
+}
+
+#caravanaInfo h2{
+    color: #ED3237;
+    font-style: italic;
+    font-size: 32px;
+}
+
+#caravanaInfo p{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+#caravanaInfo button{
+    color: white;
+    background-color: #2740C5;
+    border: none;
+    padding: 5dvw 10dvw;
+    border-radius: 2dvw;
+    font-size: 24px;
+}
+
+#objetivos{
+    padding: 10dvw 0;
+    width: 90dvw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14dvw;
+}
+
+.articleTitle{
+    color: #ED3237;
+    font-style: italic;
+    font-size: 40px;
+    text-align: center;
+}
+
+.objetivo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8dvw;
+}
+
+.objetivo div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.objetivo svg{
+    width: 17dvw;
+    height: 17dvw;
+}
+
+.objetivo h3{
+    color: #2740C5;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.objetivo p{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#cronograma{
+    padding: 10dvw 0;
+    width: 90dvw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8dvw;
+}
+
+#buttonsDias{
+    display: flex;
+    justify-content: space-between;
+    gap: 3dvw;
+}
+
+#buttonsDias button{
+    width: 100%;
+    height: 12dvw;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 2dvw;
+}
+
+.diaButton{
+    color: #2740C5;
+    background-color: #e0e7ee;
+    border: #2740C5 2px solid;
+}
+
+.diaSelecionado{
+    color: white;
+    background-color: #2740C5;
+    border: none;
+}
+
+.diaIndisponivel{
+    color: gray;
+    border-color: gray;
+}
+
+.cronogramaDiv{
+    margin-top: 10dvw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8dvw;
+}
+
+.cronogramaTitle{
+    color: #ED3237;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cronogramaInfo, #local a{
+    text-align: center;
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.cronogramaInfo span{
+    color: #2740C5;
+}
+
+#slider{
+    display: flex;
+    width: 90dvw;
+    height: 31dvh;
+    overflow: hidden;
+    position: relative;
+}
+
+#sliderDiv{
+    width: 80%;
+    overflow: hidden;
+    display: flex;
+}
+
+#sliderDiv div{
+    display: flex;
+    transition: 500ms;
+}
+
+.sliderPass{
+    width: 10%;
+    height: 100%;
+    background: none;
+    border: none;
+}
+
+.sliderPassHidden{
+    visibility: hidden;
+}
+
+#sliderBackward{
+    transform: rotate(180deg);
+}
+
+#slider img{
+    width: 100%;
+}
+
+#local iframe{
+    width: 100dvw;
+    height: 40dvh;
+}
+
+#palestrante{
+    margin-top: 10dvw;
+}
+
+#palestrante div{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+#palestrante img{
+    width: 100%;
+}
+
+#patrocinadores{
+    padding: 10dvw 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8dvw;
+}
+
+#patrocinadoresSlider{
+    overflow-y: scroll;
+    padding-left: 5dvw;
+}
+
+#patrocinadoresSliderDiv{
+    display: flex;
+    gap: 4dvw;
+    margin-right: 5dvw;
+    width: fit-content;
+    padding-bottom: 5dvw;
+}
+
+#patrocinadoresSliderDiv img{
+    width: 32dvw;
+}
