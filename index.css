@@ -1,28 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 62.5%;
 }
 
-body{
+body {
     background-color: #e0e7ee;
 }
 
-header{
+header {
     position: absolute;
 }
 
-#caravana{
+#caravana {
     width: 100dvw;
     height: fit-content;
     background-image: url(./assets/caravana.jpg);
     background-size: cover;
-    background-position-x: 30%;
+    background-position-x: 33%;
     position: relative;
-    z-index: -2;
+    z-index: 0;
 }
 
-#caravanaBg{
+#caravanaBg {
     height: 100%;
     width: 100dvw;
     position: absolute;
@@ -30,8 +31,8 @@ header{
     z-index: -1;
 }
 
-#caravanaInfo{
-    width: 90dvw;;
+#caravanaInfo {
+    width: 90dvw;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -40,32 +41,40 @@ header{
     padding: 10dvw 0;
 }
 
-#caravanaInfo img{
+#caravanaInfo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6dvw;
+}
+
+#caravanaInfo img {
     width: 70dvw;
 }
 
-#caravanaInfo h2{
-    color: #ED3237;
+#caravanaInfo h2 {
+    color: #ed3237;
     font-style: italic;
-    font-size: 32px;
+    font-size: calc(1.6rem + 4dvw) !important;
 }
 
-#caravanaInfo p{
+#caravanaInfo p {
     color: white;
-    font-size: 32px;
+    font-size: calc(1.2rem + 4dvw) !important;
     text-align: center;
 }
 
-#caravanaInfo button{
+#caravanaInfo button {
     color: white;
-    background-color: #2740C5;
+    background-color: #2740c5;
     border: none;
     padding: 5dvw 10dvw;
     border-radius: 2dvw;
-    font-size: 24px;
+    font-size: calc(1.2rem + 2dvw) !important;
+    font-weight: bold;
 }
 
-#objetivos{
+#objetivos {
     padding: 10dvw 0;
     width: 90dvw;
     margin: auto;
@@ -74,14 +83,18 @@ header{
     gap: 14dvw;
 }
 
-.articleTitle{
-    color: #ED3237;
+#objetivosDesktop {
+    display: none;
+}
+
+.articleTitle {
+    color: #ed3237;
     font-style: italic;
-    font-size: 40px;
+    font-size: calc(2.2rem + 3dvw) !important;
     text-align: center;
 }
 
-.objetivo{
+.objetivo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -89,31 +102,41 @@ header{
     gap: 8dvw;
 }
 
-.objetivo div{
+.objetivo div {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
-.objetivo svg{
+.objetivo svg {
     width: 17dvw;
     height: 17dvw;
 }
 
-.objetivo h3{
-    color: #2740C5;
-    font-size: 32px;
+.objetivo h3 {
+    color: #2740c5;
+    font-size: calc(2rem + 1dvw) !important;
     font-weight: bold;
 }
 
-.objetivo p{
-    font-size: 24px;
+.objetivo p {
+    font-size: calc(1.4rem + 1dvw) !important;
     text-align: center;
     font-weight: bold;
 }
 
-#cronograma{
+#cronogramaWrapper {
+    overflow: hidden;
+}
+
+#cronogramas {
+    display: flex;
+    transition: 300ms;
+}
+
+.cronograma,
+#cronogramaDatas {
     padding: 10dvw 0;
     width: 90dvw;
     margin: auto;
@@ -122,38 +145,50 @@ header{
     gap: 8dvw;
 }
 
-#buttonsDias{
+.cronograma {
+    width: 90dvw;
+    padding-left: 5dvw;
+    padding-right: 5dvw;
+}
+
+#cronogramaDatas {
+    padding: 10dvw 0 0;
+}
+
+#buttonsDias {
     display: flex;
     justify-content: space-between;
     gap: 3dvw;
 }
 
-#buttonsDias button{
+#buttonsDias button {
     width: 100%;
     height: 12dvw;
     font-weight: bold;
-    font-size: 20px;
+    font-size: calc(1.2rem + 1dvw) !important;
     border-radius: 2dvw;
 }
 
-.diaButton{
-    color: #2740C5;
+.diaButton {
+    color: #2740c5;
     background-color: #e0e7ee;
-    border: #2740C5 2px solid;
+    border: #2740c5 2px solid;
 }
 
-.diaSelecionado{
+.diaSelecionado {
     color: white;
-    background-color: #2740C5;
+    background-color: #2740c5;
+    border: #2740c5 2px solid;
     border: none;
+    transition: 300ms;
 }
 
-.diaIndisponivel{
+.diaIndisponivel {
     color: gray;
     border-color: gray;
 }
 
-.cronogramaDiv{
+.cronogramaDiv {
     margin-top: 10dvw;
     display: flex;
     flex-direction: column;
@@ -161,84 +196,89 @@ header{
     gap: 8dvw;
 }
 
-.cronogramaTitle{
-    color: #ED3237;
+.cronogramaTitle {
+    color: #ed3237;
     font-style: italic;
-    font-size: 32px;
+    font-size: 26px;
     font-weight: bold;
     text-align: center;
 }
 
-.cronogramaInfo, #local a{
+.cronogramaInfo,
+.local a,
+.cronogramaInfo span {
     text-align: center;
-    font-size: 24px;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
 }
 
-.cronogramaInfo span{
-    color: #2740C5;
+.cronogramaInfo span {
+    color: #2740c5;
 }
 
-#slider{
+.slider {
     display: flex;
     width: 90dvw;
-    height: 31dvh;
+    height: fit-content;
     overflow: hidden;
     position: relative;
+    align-items: center;
 }
 
-#sliderDiv{
+.sliderDiv {
     width: 80%;
     overflow: hidden;
     display: flex;
 }
 
-#sliderDiv div{
+.sliderDiv div {
     display: flex;
     transition: 500ms;
 }
 
-.sliderPass{
+.sliderPass {
     width: 10%;
-    height: 100%;
+    height: 25vh;
     background: none;
     border: none;
 }
 
-.sliderPassHidden{
+.sliderPassHidden {
     visibility: hidden;
 }
 
-#sliderBackward{
+.sliderBackward {
     transform: rotate(180deg);
 }
 
-#slider img{
+.slider img {
     width: 100%;
 }
 
-#local iframe{
+.local iframe {
     width: 100dvw;
-    height: 40dvh;
+    height: -webkit-fill-available;
+    min-height: 40vh;
 }
 
-#palestrante{
+.palestrante {
     margin-top: 10dvw;
 }
 
-#palestrante div{
+.palestrante div {
     display: flex;
+    width: 100%;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    justify-content: space-around;
+    gap: 4dvw;
 }
 
-#palestrante img{
+.palestrante img {
     width: 100%;
 }
 
-#patrocinadores{
+#patrocinadores {
     padding: 10dvw 0;
     margin: auto;
     display: flex;
@@ -246,12 +286,12 @@ header{
     gap: 8dvw;
 }
 
-#patrocinadoresSlider{
+#patrocinadoresSlider {
     overflow-y: scroll;
     padding-left: 5dvw;
 }
 
-#patrocinadoresSliderDiv{
+#patrocinadoresSliderDiv {
     display: flex;
     gap: 4dvw;
     margin-right: 5dvw;
@@ -259,6 +299,126 @@ header{
     padding-bottom: 5dvw;
 }
 
-#patrocinadoresSliderDiv img{
-    width: 32dvw;
+#patrocinadoresSliderDiv img {
+    width: 24dvw;
+}
+
+#saibaMais {
+    padding: 10dvw 0 20dvw;
+    width: 90dvw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8dvw;
+}
+
+#saibaMais p,
+#saibaMais a {
+    font-size: calc(1.4rem + 1dvw) !important;
+    text-align: center;
+    font-weight: bold;
+}
+
+#saibaMais a,
+#saibaMais a:visited {
+    color: #2740c5;
+    display: inline-flex;
+    align-items: flex-end;
+    gap: 1vw;
+}
+
+@media (1024px <= width < 1920px) {
+    #caravanaInfo {
+        flex-direction: row-reverse;
+        padding: 0;
+        height: 95dvh;
+        width: 75dvw;
+        justify-content: space-between;
+    }
+
+    #caravanaInfo img {
+        width: 35%;
+    }
+
+    #caravanaInfo div {
+        align-items: flex-start;
+        gap: 2dvw;
+    }
+
+    #caravanaInfo h2 {
+        font-size: calc(2.4rem + 1dvw) !important;
+    }
+
+    #caravanaInfo p {
+        font-size: calc(2rem + 0.5dvw) !important;
+        text-align: left;
+    }
+
+    #caravanaInfo button {
+        padding: calc(0.5dvw + 0.8dvh) calc(1.5dvw + 2dvh);
+        border-radius: 0.6dvw;
+        font-size: calc(1.6rem + 0.2dvw) !important;
+    }
+
+    #caravanaInfo button:hover {
+        cursor: pointer !important;
+    }
+
+    #objetivos {
+        display: none;
+    }
+
+    #objetivosDesktop {
+        padding: 5dvw 0;
+        width: 75dvw;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        gap: 8dvw;
+    }
+
+    #sobreWrapper {
+        display: flex;
+        gap: 10dvw;
+    }
+
+    .sobreCards {
+        width: 100%;
+        border: #2740c5 3px solid;
+        padding: 5dvw 2dvw;
+        border-radius: 2dvw;
+        height: 40dvh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1dvw;
+    }
+
+    #sobreWrapper svg {
+        width: 8dvw;
+        height: fit-content;
+        transition: 600ms;
+    }
+
+    .sobreCards p {
+        color: #2740c5;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .descriptionDiv {
+        height: 0;
+        overflow: hidden;
+        transition: 600ms;
+    }
+
+    .description{
+        font-size: 20px !important;
+        font-weight: 600 !important;
+    }
+
+    .articleTitle {
+        font-size: calc(2.2rem + 2dvw) !important;
+    }
 }
