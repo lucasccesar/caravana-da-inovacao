@@ -45,12 +45,12 @@ function func(e, i){
 sobreCards.forEach(e => {
     e.addEventListener('mouseenter', ()=>{
         e.lastElementChild.style.height = `${e.lastElementChild.firstElementChild.clientHeight}px`
-        e.firstElementChild.style.width = `5vw`
+        e.firstElementChild.classList.add('svgShrink')
         console.log(e.lastElementChild.firstElementChild.clientHeight)
     })
     e.addEventListener('mouseleave', ()=>{
         e.lastElementChild.style.height = `0px`
-        e.firstElementChild.style.width = `8vw`
+        e.firstElementChild.classList.remove('svgShrink')
         console.log(e.lastElementChild.firstElementChild.clientHeight)
     })
 });

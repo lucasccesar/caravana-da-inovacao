@@ -5,6 +5,10 @@
     font-size: 62.5%;
 }
 
+button{
+    cursor: pointer;
+}
+
 body {
     background-color: #e0e7ee;
 }
@@ -14,7 +18,7 @@ header {
 }
 
 #caravana {
-    width: 100dvw;
+    width: calc(100vw - (100vw - 100%));
     height: fit-content;
     background-image: url(./assets/caravana.jpg);
     background-size: cover;
@@ -25,42 +29,42 @@ header {
 
 #caravanaBg {
     height: 100%;
-    width: 100dvw;
+    width: calc(100vw - (100vw - 100%));
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: -1;
 }
 
 #caravanaInfo {
-    width: 90dvw;
+    width: 90vw;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 6dvw;
+    gap: 6vw;
     align-items: center;
-    padding: 10dvw 0;
+    padding: 10vw 0;
 }
 
 #caravanaInfo div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6dvw;
+    gap: 6vw;
 }
 
 #caravanaInfo img {
-    width: 70dvw;
+    width: 70vw;
 }
 
 #caravanaInfo h2 {
     color: #ed3237;
     font-style: italic;
-    font-size: calc(1.6rem + 4dvw) !important;
+    font-size: calc(1.6rem + 4vw) !important;
 }
 
 #caravanaInfo p {
     color: white;
-    font-size: calc(1.2rem + 4dvw) !important;
+    font-size: calc(1.2rem + 4vw) !important;
     text-align: center;
 }
 
@@ -68,19 +72,19 @@ header {
     color: white;
     background-color: #2740c5;
     border: none;
-    padding: 5dvw 10dvw;
-    border-radius: 2dvw;
-    font-size: calc(1.2rem + 2dvw) !important;
+    padding: 5vw 10vw;
+    border-radius: 2vw;
+    font-size: calc(1.2rem + 2vw) !important;
     font-weight: bold;
 }
 
 #objetivos {
-    padding: 10dvw 0;
-    width: 90dvw;
+    padding: 10vw 0;
+    width: 90vw;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 14dvw;
+    gap: 14vw;
 }
 
 #objetivosDesktop {
@@ -90,7 +94,7 @@ header {
 .articleTitle {
     color: #ed3237;
     font-style: italic;
-    font-size: calc(2.2rem + 3dvw) !important;
+    font-size: calc(2.2rem + 3vw) !important;
     text-align: center;
 }
 
@@ -99,7 +103,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    gap: 8dvw;
+    gap: 8vw;
 }
 
 .objetivo div {
@@ -110,18 +114,18 @@ header {
 }
 
 .objetivo svg {
-    width: 17dvw;
-    height: 17dvw;
+    width: 17vw;
+    height: 17vw;
 }
 
 .objetivo h3 {
     color: #2740c5;
-    font-size: calc(2rem + 1dvw) !important;
+    font-size: calc(2rem + 1vw) !important;
     font-weight: bold;
 }
 
 .objetivo p {
-    font-size: calc(1.4rem + 1dvw) !important;
+    font-size: calc(1.4rem + 1vw) !important;
     text-align: center;
     font-weight: bold;
 }
@@ -137,42 +141,43 @@ header {
 
 .cronograma,
 #cronogramaDatas {
-    padding: 10dvw 0;
-    width: 90dvw;
+    padding: 10vw 0;
+    width: 90vw;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 8dvw;
+    gap: 8vw;
 }
 
 .cronograma {
-    width: 90dvw;
-    padding-left: 5dvw;
-    padding-right: 5dvw;
+    width: 90vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
 }
 
 #cronogramaDatas {
-    padding: 10dvw 0 0;
+    padding: 10vw 0 0;
 }
 
 #buttonsDias {
     display: flex;
     justify-content: space-between;
-    gap: 3dvw;
+    gap: 3vw;
 }
 
 #buttonsDias button {
     width: 100%;
-    height: 12dvw;
+    height: 12vw;
     font-weight: bold;
-    font-size: calc(1.2rem + 1dvw) !important;
-    border-radius: 2dvw;
+    font-size: calc(1.2rem + 1vw) !important;
+    border-radius: 2vw;
 }
 
 .diaButton {
     color: #2740c5;
     background-color: #e0e7ee;
     border: #2740c5 2px solid;
+    cursor: pointer;
 }
 
 .diaSelecionado {
@@ -189,11 +194,11 @@ header {
 }
 
 .cronogramaDiv {
-    margin-top: 10dvw;
+    margin-top: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8dvw;
+    gap: 8vw;
 }
 
 .cronogramaTitle {
@@ -219,7 +224,7 @@ header {
 
 .slider {
     display: flex;
-    width: 90dvw;
+    width: 90vw;
     height: fit-content;
     overflow: hidden;
     position: relative;
@@ -257,13 +262,17 @@ header {
 }
 
 .local iframe {
-    width: 100dvw;
+    width: 100vw;
     height: -webkit-fill-available;
     min-height: 40vh;
 }
 
 .palestrante {
-    margin-top: 10dvw;
+    margin-top: 10vw;
+}
+
+.palestranteInfoDesktop {
+    display: none !important;
 }
 
 .palestrante div {
@@ -271,7 +280,7 @@ header {
     width: 100%;
     justify-content: center;
     align-items: center;
-    gap: 4dvw;
+    gap: 4vw;
 }
 
 .palestrante img {
@@ -279,42 +288,46 @@ header {
 }
 
 #patrocinadores {
-    padding: 10dvw 0;
+    padding: 10vw 0;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 8dvw;
+    gap: 8vw;
 }
 
 #patrocinadoresSlider {
     overflow-y: scroll;
-    padding-left: 5dvw;
+    padding-left: 5vw;
 }
 
 #patrocinadoresSliderDiv {
     display: flex;
-    gap: 4dvw;
-    margin-right: 5dvw;
+    gap: 4vw;
+    margin-right: 5vw;
     width: fit-content;
-    padding-bottom: 5dvw;
+    padding-bottom: 5vw;
 }
 
 #patrocinadoresSliderDiv img {
-    width: 24dvw;
+    width: 24vw;
+}
+
+#patrocinadoresSliderDesktop {
+    display: none;
 }
 
 #saibaMais {
-    padding: 10dvw 0 20dvw;
-    width: 90dvw;
+    padding: 10vw 0 20vw;
+    width: 90vw;
     margin: auto;
     display: flex;
     flex-direction: column;
-    gap: 8dvw;
+    gap: 8vw;
 }
 
 #saibaMais p,
 #saibaMais a {
-    font-size: calc(1.4rem + 1dvw) !important;
+    font-size: calc(1.4rem + 1vw) !important;
     text-align: center;
     font-weight: bold;
 }
@@ -327,12 +340,12 @@ header {
     gap: 1vw;
 }
 
-@media (1024px <= width < 1920px) {
+@media (1024px <= width) {
     #caravanaInfo {
         flex-direction: row-reverse;
         padding: 0;
-        height: 95dvh;
-        width: 75dvw;
+        height: 95vh;
+        width: 75vw;
         justify-content: space-between;
     }
 
@@ -342,26 +355,28 @@ header {
 
     #caravanaInfo div {
         align-items: flex-start;
-        gap: 2dvw;
+        gap: 2vw;
     }
 
     #caravanaInfo h2 {
-        font-size: calc(2.4rem + 1dvw) !important;
+        font-size: calc(2.4rem + 1vw) !important;
     }
 
     #caravanaInfo p {
-        font-size: calc(2rem + 0.5dvw) !important;
+        font-size: calc(2rem + 0.5vw) !important;
         text-align: left;
     }
 
     #caravanaInfo button {
-        padding: calc(0.5dvw + 0.8dvh) calc(1.5dvw + 2dvh);
-        border-radius: 0.6dvw;
-        font-size: calc(1.6rem + 0.2dvw) !important;
+        padding: calc(0.5vw + 0.8vh) calc(1.5vw + 2vh);
+        border-radius: 0.6vw;
+        font-size: calc(1.6rem + 0.2vw) !important;
     }
 
     #caravanaInfo button:hover {
         cursor: pointer !important;
+        background-color: #1e319e;
+        transition: 200ms;
     }
 
     #objetivos {
@@ -369,36 +384,44 @@ header {
     }
 
     #objetivosDesktop {
-        padding: 5dvw 0;
-        width: 75dvw;
+        padding: 5vw 0;
+        width: 75vw;
         display: flex;
         flex-direction: column;
         margin: auto;
-        gap: 8dvw;
+        gap: 8vw;
     }
 
     #sobreWrapper {
         display: flex;
-        gap: 10dvw;
+        gap: 10vw;
     }
 
     .sobreCards {
         width: 100%;
         border: #2740c5 3px solid;
-        padding: 5dvw 2dvw;
-        border-radius: 2dvw;
-        height: 40dvh;
+        padding: 5vw 2vw;
+        border-radius: 2vw;
+        height: 40vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 1dvw;
+        gap: 1vw;
+    }
+
+    .cardTitle {
+        margin-bottom: 2vw;
     }
 
     #sobreWrapper svg {
-        width: 8dvw;
+        width: 8vw;
         height: fit-content;
         transition: 600ms;
+    }
+
+    .svgShrink {
+        width: 5vw !important;
     }
 
     .sobreCards p {
@@ -413,12 +436,274 @@ header {
         transition: 600ms;
     }
 
-    .description{
+    .description {
         font-size: 20px !important;
         font-weight: 600 !important;
     }
 
     .articleTitle {
-        font-size: calc(2.2rem + 2dvw) !important;
+        font-size: calc(2.2rem + 2vw) !important;
+    }
+
+    #cronogramaDatas {
+        padding: 5vw 0;
+        gap: 5vw;
+        width: 75vw;
+    }
+
+    #buttonsDias {
+        justify-content: center;
+    }
+
+    #buttonsDias button {
+        width: 10vw;
+        height: 5vw;
+        font-size: calc(1.6rem + 0.2vw) !important;
+        border-radius: 1vw;
+    }
+
+    .cronograma {
+        width: 75vw;
+        padding: 5vw 12.5vw;
+    }
+
+    .cronogramaDiv {
+        margin-top: 0;
+        gap: 3vw;
+    }
+
+    .cronogramaTitle {
+        font-size: calc(2.4rem + 0.5vw) !important;
+    }
+
+    .cronogramaInfo,
+    .cronogramaInfo span {
+        font-size: calc(1.4rem + 0.5vw) !important;
+    }
+
+    .slider {
+        width: 75vw;
+    }
+
+    .sliderDiv {
+        width: 100%;
+    }
+
+    .sliderPass {
+        width: fit-content;
+    }
+
+    .slider img {
+        width: 61vw;
+    }
+
+    .sliderPass svg {
+        height: 7vw !important;
+        width: 7vw !important;
+    }
+
+    .local a {
+        margin-bottom: 5vw;
+    }
+
+    .local iframe {
+        min-height: 50vh;
+    }
+
+    .palestranteInfoDesktop {
+        display: flex !important;
+        flex-direction: row;
+        width: 75vw;
+    }
+
+    .palestranteInfoDesktop div {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .palestranteInfoDesktop div div {
+        display: flex !important;
+        gap: 1vw;
+        flex-direction: row;
+    }
+
+    .palestranteInfoDesktop .cronogramaInfo {
+        text-align: justify;
+    }
+
+    .palestranteInfoDesktop p,
+    .palestranteInfoDesktop img {
+        display: inline !important;
+    }
+
+    .palestrante div,
+    .palestrante img,
+    .palestrante p {
+        display: none;
+    }
+
+    .palestrante svg{
+        cursor: pointer;
+    }
+
+    .palestrante img {
+        width: 50%;
+        height: 50vh;
+    }
+
+    #patrocinadores {
+        padding: 5vw 0;
+    }
+
+    #patrocinadoresSlider {
+        display: none;
+    }
+
+    #patrocinadoresSliderDesktop {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .patrocinadoresSliderDivDesktop {
+        animation: 15s slide infinite linear;
+        display: flex;
+        flex-wrap: nowrap;
+        min-width: fit-content;
+        gap: 3vw;
+        padding-right: 3vw;
+    }
+
+    @keyframes slide {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .patrocinadoresSliderDivDesktop img {
+        height: 13vw;
+    }
+
+    #saibaMais {
+        gap: 3vw;
+        width: 75vw;
+        padding: 5vw 0 10vw;
+    }
+}
+
+@media (1920px<=width) {
+    #caravanaInfo {
+        width: 60vw;
+    }
+
+    #caravanaInfo img {
+        width: 70%;
+    }
+
+    #objetivosDesktop {
+        gap: 5vw;
+    }
+
+    .articleTitle {
+        font-size: calc(2.2rem + 1.6vw) !important;
+    }
+
+    #objetivosDesktop {
+        width: 70vw;
+    }
+
+    #sobreWrapper {
+        justify-content: center;
+    }
+
+    #sobreWrapper svg {
+        width: 5vw;
+    }
+
+    .sobreCards {
+        width: 30%;
+    }
+
+    .cardTitle {
+        margin-bottom: 0.5vw;
+    }
+
+    .svgShrink {
+        width: 4vw !important;
+    }
+
+    .description {
+        text-align: justify;
+    }
+
+    #cronogramaDatas {
+        gap: 2vw;
+        padding: 5vw 0 3vw;
+    }
+
+    #buttonsDias {
+        gap: 1vw;
+    }
+
+    #buttonsDias button {
+        width: 7vw;
+        height: 3vw;
+        border-radius: 0.4vw;
+    }
+
+    #cronogramas {
+        display: flex;
+        transition: 500ms;
+    }
+
+    .cronograma {
+        padding: 3vw 12.5vw;
+    }
+
+    .cronogramaDiv {
+        gap: 2vw;
+    }
+
+    .slider {
+        justify-content: center;
+    }
+
+    .sliderDiv {
+        width: 40vw;
+    }
+
+    .sliderPass{
+        height: 60vh;
+    }
+
+    .sliderPass svg {
+        height: 4vw !important;
+        width: 4vw !important;
+    }
+
+    .slider img {
+        width: 40vw;
+    }
+
+    .local a{
+        font-size: 22px;
+    }
+
+    .palestranteInfoDesktop{
+        width: 60vw !important;
+    }
+
+    #patrocinadores{
+        gap: 5vw;
+    }
+
+    .patrocinadoresSliderDivDesktop img {
+        height: 8vw;
+    }
+
+    #saibaMais a{
+        gap: 0.4vw;
     }
 }
