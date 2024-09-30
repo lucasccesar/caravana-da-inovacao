@@ -68,7 +68,7 @@ header {
     text-align: center;
 }
 
-#caravanaInfo button {
+#caravanaInfo a {
     color: white;
     background-color: #2740c5;
     border: none;
@@ -76,6 +76,7 @@ header {
     border-radius: 2vw;
     font-size: calc(1.2rem + 2vw) !important;
     font-weight: bold;
+    text-decoration: none;
 }
 
 #realizacao {
@@ -85,6 +86,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#realizacao img{
+    width: 50dvw;
 }
 
 #objetivos {
@@ -376,13 +381,13 @@ header {
         text-align: left;
     }
 
-    #caravanaInfo button {
+    #caravanaInfo a {
         padding: calc(0.5vw + 0.8vh) calc(1.5vw + 2vh);
         border-radius: 0.6vw;
         font-size: calc(1.6rem + 0.2vw) !important;
     }
 
-    #caravanaInfo button:hover {
+    #caravanaInfo a:hover {
         cursor: pointer !important;
         background-color: #1e319e;
         transition: 200ms;
