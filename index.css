@@ -5,7 +5,7 @@
     font-size: 62.5%;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
@@ -76,6 +76,15 @@ header {
     border-radius: 2vw;
     font-size: calc(1.2rem + 2vw) !important;
     font-weight: bold;
+}
+
+#realizacao {
+    padding: 10vw 0;
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #objetivos {
@@ -379,6 +388,10 @@ header {
         transition: 200ms;
     }
 
+    #realizacao img{
+        width: 30dvw;
+    }
+
     #objetivos {
         display: none;
     }
@@ -516,6 +529,10 @@ header {
         width: 75vw;
     }
 
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
     .palestranteInfoDesktop div {
         display: flex !important;
         flex-direction: column;
@@ -542,7 +559,7 @@ header {
         display: none;
     }
 
-    .palestrante svg{
+    .palestrante svg {
         cursor: pointer;
     }
 
@@ -610,6 +627,14 @@ header {
         font-size: calc(2.2rem + 1.6vw) !important;
     }
 
+    #realizacao{
+        padding: 5vw 0;
+    }
+
+    #realizacao img{
+        width: 15dvw;
+    }
+
     #objetivosDesktop {
         width: 70vw;
     }
@@ -674,7 +699,7 @@ header {
         width: 40vw;
     }
 
-    .sliderPass{
+    .sliderPass {
         height: 60vh;
     }
 
@@ -687,15 +712,15 @@ header {
         width: 40vw;
     }
 
-    .local a{
+    .local a {
         font-size: 22px;
     }
 
-    .palestranteInfoDesktop{
+    .palestranteInfoDesktop {
         width: 60vw !important;
     }
 
-    #patrocinadores{
+    #patrocinadores {
         gap: 5vw;
     }
 
@@ -703,7 +728,7 @@ header {
         height: 8vw;
     }
 
-    #saibaMais a{
+    #saibaMais a {
         gap: 0.4vw;
     }
 }

@@ -2,6 +2,9 @@ let sliderButtons = document.querySelectorAll('.sliderPass');
 let diaButtons = document.querySelectorAll('.diaButton');
 let cronogramas = document.getElementById('cronogramas')
 let sobreCards = document.querySelectorAll('.sobreCards')
+let linkedin = document.querySelector('.palestranteInfoDesktop div div svg')
+
+console.log(linkedin)
 
 Object.values(sliderButtons).forEach((element) => {
     element.addEventListener('click', () => {
