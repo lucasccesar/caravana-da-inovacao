@@ -569,7 +569,7 @@ header {
     }
 
     .palestrante img {
-        width: 50%;
+        width: auto;
         height: 50vh;
     }
 
