@@ -1,10 +1,10 @@
 let sliderButtons = document.querySelectorAll('.sliderPass');
 let diaButtons = document.querySelectorAll('.diaButton');
-let cronogramas = document.getElementById('cronogramas')
-let sobreCards = document.querySelectorAll('.sobreCards')
-let linkedin = document.querySelector('.palestranteInfoDesktop div div svg')
+let cronogramas = document.getElementById('cronogramas');
+let sobreCards = document.querySelectorAll('.sobreCards');
+let linkedin = document.querySelector('.palestranteInfoDesktop div div svg');
 
-console.log(linkedin)
+cronogramas.style.transform = `translateX(${cronogramas.clientWidth * -1}px)`;
 
 Object.values(sliderButtons).forEach((element) => {
     element.addEventListener('click', () => {
@@ -34,26 +34,28 @@ Object.values(sliderButtons).forEach((element) => {
 });
 
 diaButtons.forEach((element, index) => {
-    element.addEventListener('click', ()=>{func(element, index)});
+    element.addEventListener('click', () => {
+        func(element, index);
+    });
 });
 
-function func(e, i){
-    if(e.classList.contains('diaIndisponivel') != true){
-        cronogramas.style.transform = `translateX(${cronogramas.clientWidth * i * -1}px)`
-        document.querySelector('.diaSelecionado').classList.remove('diaSelecionado')
-        e.classList.add('diaSelecionado')
+function func(e, i) {
+    if (e.classList.contains('diaIndisponivel') != true) {
+        cronogramas.style.transform = `translateX(${cronogramas.clientWidth * i * -1}px)`;
+        document.querySelector('.diaSelecionado').classList.remove('diaSelecionado');
+        e.classList.add('diaSelecionado');
     }
 }
 
-sobreCards.forEach(e => {
-    e.addEventListener('mouseenter', ()=>{
-        e.lastElementChild.style.height = `${e.lastElementChild.firstElementChild.clientHeight}px`
-        e.firstElementChild.classList.add('svgShrink')
-        console.log(e.lastElementChild.firstElementChild.clientHeight)
-    })
-    e.addEventListener('mouseleave', ()=>{
-        e.lastElementChild.style.height = `0px`
-        e.firstElementChild.classList.remove('svgShrink')
-        console.log(e.lastElementChild.firstElementChild.clientHeight)
-    })
+sobreCards.forEach((e) => {
+    e.addEventListener('mouseenter', () => {
+        e.lastElementChild.style.height = `${e.lastElementChild.firstElementChild.clientHeight}px`;
+        e.firstElementChild.classList.add('svgShrink');
+        console.log(e.lastElementChild.firstElementChild.clientHeight);
+    });
+    e.addEventListener('mouseleave', () => {
+        e.lastElementChild.style.height = `0px`;
+        e.firstElementChild.classList.remove('svgShrink');
+        console.log(e.lastElementChild.firstElementChild.clientHeight);
+    });
 });
